@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tính giá xe lăn bánh"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá xe"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextGiaXe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:inputType="number" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại xe"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"/>
+        <Spinner
+            android:layout_marginLeft="40dp"
+            android:id="@+id/spinner_LoaiXe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa phương"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"/>
+        <Spinner
+            android:id="@+id/spinner_DiaPhuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_TinhToan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="100dp"
+        android:shadowColor="#000000"
+        android:text="Tính toán" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_Giadamphan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá đàm phàn"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/txt_PhiTruocBa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phí trước bạ"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/txt_Phiduongbo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHí sử dụng đường bộ"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/txt_BaoHiemTrachNhiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bảo hiểm trách nhiệm"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/txt_PhiBienSo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phí đăng ký biển số"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/txt_PhiDangKiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phí đăng kiếm"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/txt_Tongcong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng cộng"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtSoTienTra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Số tiền trả"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

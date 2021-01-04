@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GiaXeLanBanh</string>
+
+    <string-array name="loaixe">
+        <item>Xe du lịch</item>
+        <item>Xe bán tải</item>
+        <item>Xe tải nhỏ</item>
+    </string-array>
+
+    <string-array name="diaphuong">
+        <item>TP.HCM</item>
+        <item>Đồng Nai</item>
+        <item>Bình Dương</item>
+        <item>Long An</item>
+    </string-array>
+</resources>

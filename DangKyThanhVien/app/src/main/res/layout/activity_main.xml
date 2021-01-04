@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#43A4F1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="15dp"
+        android:text="Đăng ký Thành viên"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"
+        android:text="Họ tên:"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="254dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="80dp"
+        android:background="#fff" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:text="Username:"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:layout_width="254dp"
+        android:id="@+id/editUser"
+        android:layout_height="40dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="140dp"
+        android:background="#fff"/>
+    <TextView
+        android:id="@+id/tv3"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="210dp"
+        android:text="Password:"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:layout_width="254dp"
+        android:id="@+id/editPass"
+        android:layout_height="40dp"
+        android:layout_marginLeft="120dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="200dp"
+        android:background="#fff"/>
+    <TextView
+        android:id="@+id/tv4"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="275dp"
+        android:text="Ngày sinh:"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:layout_width="254dp"
+        android:id="@+id/editYear"
+        android:layout_height="40dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="260dp"
+        android:background="#fff"/>
+    <TextView
+        android:id="@+id/tv5"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="330dp"
+        android:text="Giới tính:"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_GioiTinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="120dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radioNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Nam"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioNu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ"
+            android:textSize="20sp"
+            android:textColor="#fff"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="380dp"
+        android:text="Quốc tịch:"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+    <Spinner
+        android:id="@+id/Quocgia"
+        android:entries="@array/QuocGia"
+        android:layout_width="254dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="380dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="#fff">
+    </Spinner>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tạo"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="150dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

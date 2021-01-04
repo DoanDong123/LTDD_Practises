@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Demo Order</string>
+    <string name="Menu">Thực đơn các món ăn</string>
+    <string name="Phobo">Phở bò (50k)</string>
+    <string name="Hutiu">Hủ Tíu(50k)</string>
+    <string name="Banhmi">Bánh mì ốp la (20k)</string>
+    <string name="Bunbo">Bún bò (40k)</string>
+    <string name="Goimon">Gọi Món</string>
+</resources>
